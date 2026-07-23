@@ -36,6 +36,21 @@ class _CounterState extends State<Counter> {
     // rerunning build methods fast, so that you can just
     // rebuild anything that needs updating rather that
     // having to individually change instances of widgets.
-    return Row();
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        ElevatedButton(onPressed: _increment, child: const Text('Increment')),
+        const SizedBox(width: 16),
+        Text('Count" $_counter'),
+      ],
+    );
   }
+}
+
+void main() {
+  runApp(
+    const MaterialApp(
+      home: Scaffold(body: Center(child: Counter())),
+    ),
+  );
 }
