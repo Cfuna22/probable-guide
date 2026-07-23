@@ -23,4 +23,4 @@ class MyButton extends StatelessWidget {
   }
 }
 
-void
+void main
