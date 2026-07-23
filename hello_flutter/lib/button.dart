@@ -23,4 +23,10 @@ class MyButton extends StatelessWidget {
   }
 }
 
-void main
+void main() {
+  runApp(
+    const MaterialApp(
+      home: Scaffold(body: Center(child: MyButton())),
+    ),
+  );
+}
