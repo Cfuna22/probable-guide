@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class Counter extends StatefulWidget {
   // This class is the configuration for the state
   // It holds the values (in this case nothing) provided
+  // by the parent and used by the build  method of the
   // State, Fields in awidget subclass are always marked
   // "final".
 
@@ -41,7 +42,7 @@ class _CounterState extends State<Counter> {
       children: <Widget>[
         ElevatedButton(onPressed: _increment, child: const Text('Increment')),
         const SizedBox(width: 16),
-        Text('Count" $_counter'),
+        Text('Count $_counter'),
       ],
     );
   }
