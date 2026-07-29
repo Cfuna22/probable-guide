@@ -69,7 +69,7 @@
 //   void _increment() {
 //     setState(() {
 //       _counter++;
-//     })
+//     });
 //   }
 
 //   @override
