@@ -116,7 +116,9 @@ class CounterIncrementor extends StatelessWidget {
   final VoidCallback onPressed;
 
   @override
-  Widget
+  Widget build(BuildContext context) {
+    return ElevatedButton(onPressed: onPressed, child: const Text('Increment'));
+  }
 }
 
 class Counter extends StatefulWidget {
@@ -126,7 +128,7 @@ class Counter extends StatefulWidget {
   State<Counter> createState() => _CounterState();
 }
 
-void _CounterState extends State<Counter> {
+class _CounterState extends State<Counter> {
   int _counter = 0;
 
   void _increment() {
