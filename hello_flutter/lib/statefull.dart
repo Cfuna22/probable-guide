@@ -133,6 +133,7 @@ class _CounterState extends State<Counter> {
 
   void _increment() {
     setState(() {
+      
       ++_counter;
     });
   }
