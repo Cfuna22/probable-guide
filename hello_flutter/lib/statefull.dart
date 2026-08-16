@@ -128,7 +128,6 @@ class Counter extends StatefulWidget {
   State<Counter> createState() => _CounterState();
 }
 
-
 class _CounterState extends State<Counter> {
   int _counter = 0;
 
