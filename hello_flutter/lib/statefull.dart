@@ -136,7 +136,6 @@ class _CounterState extends State<Counter> {
       ++_counter;
     });
   }
-  
 
   @override
   Widget build(BuildContext context) {
