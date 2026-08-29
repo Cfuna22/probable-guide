@@ -8,7 +8,6 @@ version:
   channel: "stable"
 
 project_type: app
-
 # Tracks metadata for the flutter migrate command
 migration:
   platforms:
